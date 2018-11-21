@@ -1,0 +1,19 @@
+class Pilha(): 
+  def __init__(self):
+    self.pilha= []
+  
+  def Push(self, item):
+    if not (self.TamanhoMaximo()):
+      self.pilha.append(item)
+    else:
+      self.Pop()
+      self.pilha.append(item)
+  
+  def TamanhoMaximo(self,TamanhoMaximo):
+    return len(self.pilha)==TamanhoMaximo
+  
+  def Pop(self):
+    if not(self.IsEmpty()):
+      self.pilha.pop ()
+  def isEmpty(self):
+    return len(self.pilha)==0 
