@@ -1,4 +1,4 @@
-class Stack(): 
+class Pilha(): 
   def __init__(self):
     self.lista= []
 
@@ -6,4 +6,4 @@ class Stack():
     if not (self.AlreadyHas(item)):
       self.pilha.append(item)
   def AlreadyHas(self, item):
-    return item in self.pilha
+    return item in self.lista
