@@ -1,0 +1,20 @@
+class Pilha():
+  def __init__(self):
+    self.lista = []
+  def Push(self,valor):
+    self.lista.append(valor)
+  def Pop(self):
+    if(not(self.isEmpty())):
+      return self.lista.pop()
+  def isEmpty(self):
+    return(len(self.lista)==0)
+  def Lenght(self):
+    return(len(self.lista))
+  def Peek(self):
+    if(not(self.isEmpty())):
+      return (self.lista[-1])
+stack= Pilha()
+for i in range( 16 ) :
+  if i % 3 == 0 :
+    stack.Push( i )
+    print("o valor %d foi empilhado"%(i))
